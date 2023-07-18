@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Langage reStructuredText &mdash; Notice Sphinx 2023 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Structure générale d’un projet python" href="2_structure_generale_projet_python.html" />
+    <link rel="prev" title="Sommaire" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Notice Sphinx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Sommaire</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. Langage reStructuredText</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mises-en-forme">Mises en forme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-titres">Les titres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-paragraphes">Les paragraphes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-directives">Les directives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-listes">Les listes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-blocs-de-code">Les blocs de code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-liens">Les liens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#les-images">Les images</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2_structure_generale_projet_python.html">2. Structure générale d’un projet python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_demonstration.html">3. Démonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_documentation_code_python.html">4. Documentation du code python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_installation_sphinx.html">5. Installation de Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_sphinx_quickstart.html">6. Sphinx-quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_modification_fichier_configuration.html">7. Modification du fichier de configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_generation_fichiers_rst.html">8. Génération des fichiers rst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_modification_fichier_index.html">9. Modification du fichier index.rst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_generation_documentation.html">10. Génération de la documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_maj_depot_github.html">11. Mise à jour du dépôt GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_embellissement_titres.html">12. Embellissement des titres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_choix_theme_sphinx.html">13. Choix d’un thème Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_github_pages.html">14. GitHub Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_windows.html">15. Sur Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_bibliographie.html">16. Bibliographie</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Notice Sphinx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Sommaire</a></li>
+      <li class="breadcrumb-item active">1. Langage reStructuredText</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/1_langage_restructuredtext.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="langage-restructuredtext">
+<h1>1. Langage reStructuredText<a class="headerlink" href="#langage-restructuredtext" title="Permalink to this headline"></a></h1>
+<p>Dans cette section, on va découvrir les <strong>éléments de balisages</strong> les plus utiles de <strong>reStructuredText</strong>,
+qui vous aideront à formater et organiser votre documentation de manière claire et cohérente.</p>
+<section id="mises-en-forme">
+<h2>Mises en forme<a class="headerlink" href="#mises-en-forme" title="Permalink to this headline"></a></h2>
+<p>Vous pouvez appliquer des mises en forme spécifiques au texte en utilisant les balises appropriées:</p>
+<ul class="simple">
+<li><p>Le texte peut être mis en gras en l’entourant de <strong>doubles astérisques</strong>.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gs">**texte en gras**</span>
+</pre></div>
+</div>
+<p><strong>texte en gras</strong></p>
+<ul class="simple">
+<li><p>Le texte peut être mis en italique en l’entourant d’<strong>astérisques simples</strong>.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="ge">*texte en italique*</span>
+</pre></div>
+</div>
+<p><em>texte en italique</em></p>
+</section>
+<section id="les-titres">
+<h2>Les titres<a class="headerlink" href="#les-titres" title="Permalink to this headline"></a></h2>
+<p>Les <strong>titres</strong> aident à structurer le contenu et à faciliter la navigation pour les lecteurs.
+Vous pouvez utiliser différentes balises pour créer des titres de différents niveaux :</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">*************</span>
+<span class="gh">Titre de page</span>
+<span class="gh">*************</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Titre de niveau 1</span>
+<span class="gh">=================</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Titre de niveau 2</span>
+<span class="gh">-----------------</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Titre de niveau 3</span>
+<span class="gh">*****************</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Titre de niveau 4</span>
+<span class="gh">~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Titre de niveau 5</span>
+<span class="gh">+++++++++++++++++</span>
+</pre></div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">``exemple``</span>
+<span class="gh">===========</span>
+</pre></div>
+</div>
+</section>
+<section id="les-paragraphes">
+<h2>Les paragraphes<a class="headerlink" href="#les-paragraphes" title="Permalink to this headline"></a></h2>
+<p>Les paragraphes sont simplement des <strong>blocs de texte séparés par des lignes vides</strong>.</p>
+</section>
+<section id="les-directives">
+<h2>Les directives<a class="headerlink" href="#les-directives" title="Permalink to this headline"></a></h2>
+<p>Les <strong>directives</strong> permettent de mettre en évidence des informations importantes ou
+des remarques spécifiques dans votre documentation.</p>
+<p>Voici quelques directives couramment utilisées :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">note</span></code> permet de mettre en évidence des remarques.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">note</span><span class="p">::</span> Ceci est une note.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ceci est une note.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">warning</span></code> est utilisé pour indiquer des avertissements importants.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">.. warning :: Ceci est un avertissement.</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Ceci est un avertissement.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">important</span></code> est utilisé pour mettre en évidence des informations essentielles.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span> Ceci est important.
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Ceci est important.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tip</span></code> est utilisé pour donner des conseils.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tip</span><span class="p">::</span> Ceci est un conseil.
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Ceci est un conseil.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">attention</span></code> est utilisé pour attirer l’attention du lecteur.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">attention</span><span class="p">::</span> Ceci est pour attirer l&#39;attention.
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Ceci est pour attirer l’attention.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">caution</span></code> est utilisé pour prévenir le lecteur d’être prudent sur un certain point.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">caution</span><span class="p">::</span> Ceci est pour prévenir d&#39;être prudent sur un point.
+</pre></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Ceci est pour prévenir d’être prudent sur un point.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">danger</span></code> est utilisé pour avertir sur un danger potentiel.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">danger</span><span class="p">::</span> Ceci est un danger.
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Ceci est un danger.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">error</span></code> est utilisé pour avertir une erreur potentielle.</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">error</span><span class="p">::</span> Ceci est une erreur.
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Ceci est une erreur.</p>
+</div>
+</section>
+<section id="les-listes">
+<h2>Les listes<a class="headerlink" href="#les-listes" title="Permalink to this headline"></a></h2>
+<p>Les <strong>listes non ordonnées</strong> sont créées en utilisant des <strong>astérisques (*)</strong>,
+des <strong>tirets  (–)</strong> ou des <strong>signes plus (+)</strong>.</p>
+<p>Les <strong>listes ordonnées</strong> sont créées en utilisant des <strong>chiffres suivis d’un point</strong>.</p>
+</section>
+<section id="les-blocs-de-code">
+<h2>Les blocs de code<a class="headerlink" href="#les-blocs-de-code" title="Permalink to this headline"></a></h2>
+<p>Les blocs de code sont créés en utilisant la directive <code class="docutils literal notranslate"><span class="pre">code-block</span></code>.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> langage de programmation
+</pre></div>
+</div>
+<p>Où <em>‘langage de programmation’</em> peut être <code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">console</span></code>, <code class="docutils literal notranslate"><span class="pre">java</span></code>, <code class="docutils literal notranslate"><span class="pre">rst</span></code>, …</p>
+</section>
+<section id="les-liens">
+<h2>Les liens<a class="headerlink" href="#les-liens" title="Permalink to this headline"></a></h2>
+<p>Vous pouvez créer des <strong>liens hypertextes</strong> en utilisant la syntaxe suivante :</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Lien vers le site officiel de <span class="s">`Sphinx </span><span class="si">&lt;https://www.sphinx-doc.org/en/master/&gt;</span><span class="s">`_</span>
+</pre></div>
+</div>
+<p>Lien vers le site officiel de <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a></p>
+</section>
+<section id="les-images">
+<h2>Les images<a class="headerlink" href="#les-images" title="Permalink to this headline"></a></h2>
+<p>Vous pouvez insérer des <strong>images</strong> dans votre documentation en utilisant la
+directive <code class="docutils literal notranslate"><span class="pre">figure</span></code> et en <strong>spécifiant le chemin vers l’image</strong>.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> chemin/vers/l/image
+</pre></div>
+</div>
+<p>Ce ne sont là que quelques-unes des balises de base utilisées dans reStructuredText.
+Il existe d’autres balises pour formater des tables, des citations, etc. Pour une référence
+complète de la syntaxe reStructuredText, vous pouvez consulter la documentation officielle
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">ici</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="Sommaire" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2_structure_generale_projet_python.html" class="btn btn-neutral float-right" title="2. Structure générale d’un projet python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Amandine LEGIERSKI.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

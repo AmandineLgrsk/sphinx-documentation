@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. Sphinx-quickstart &mdash; Notice Sphinx 2023 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/fonts.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Modification du fichier de configuration" href="7_modification_fichier_configuration.html" />
+    <link rel="prev" title="5. Installation de Sphinx" href="5_installation_sphinx.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Notice Sphinx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Sommaire</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_langage_restructuredtext.html">1. Langage reStructuredText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_structure_generale_projet_python.html">2. Structure générale d’un projet python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_demonstration.html">3. Démonstration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_documentation_code_python.html">4. Documentation du code python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_installation_sphinx.html">5. Installation de Sphinx</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Sphinx-quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_modification_fichier_configuration.html">7. Modification du fichier de configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_generation_fichiers_rst.html">8. Génération des fichiers rst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_modification_fichier_index.html">9. Modification du fichier index.rst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_generation_documentation.html">10. Génération de la documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_maj_depot_github.html">11. Mise à jour du dépôt GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_embellissement_titres.html">12. Embellissement des titres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_choix_theme_sphinx.html">13. Choix d’un thème Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_github_pages.html">14. GitHub Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_windows.html">15. Sur Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_bibliographie.html">16. Bibliographie</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Notice Sphinx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Sommaire</a></li>
+      <li class="breadcrumb-item active">6. Sphinx-quickstart</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/6_sphinx_quickstart.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sphinx-quickstart">
+<h1>6. Sphinx-quickstart<a class="headerlink" href="#sphinx-quickstart" title="Permalink to this headline"></a></h1>
+<p>Cette étape consiste à <strong>créer la structure de base du dossier de documentation</strong> qui sera le dossier  <em>docs</em>.</p>
+<p>A la racine de votre projet, ouvrez un terminal et tapez la commande suivante pour créer le dossier docs :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>docs
+</pre></div>
+</div>
+<p>Puis accédez au dossier :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>docs
+</pre></div>
+</div>
+<p>Ensuite, exécutez la commande suivante pour initialiser le projet Sphinx :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-quickstart
+</pre></div>
+</div>
+<p>Après avoir exécuté <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>, vous serez invité à répondre à plusieurs
+questions pour configurer votre projet Sphinx. Voici les questions et les réponses
+recommandées pour certaines questions :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Separate source and build directories (y/n) [n]: y</span>
+<span class="go">Project name: [Nom de votre projet]</span>
+<span class="go">Author name(s): [Votre nom]</span>
+<span class="go">Project release []: [Date de votre projet]</span>
+</pre></div>
+</div>
+<figure class="align-center" id="id1">
+<img alt="_images/8_sphinx_quickstart.PNG" src="_images/8_sphinx_quickstart.PNG" />
+<figcaption>
+<p><span class="caption-text">Questions et réponses possibles lors de l’exécution de <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Vous pouvez laisser les autres questions avec les valeurs par défaut ou y répondre en fonction de vos préférences.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Je vous recommande de répondre <strong>y</strong> à la première question. Cela permet de séparer les dossiers <em>source</em> et <em>build</em>.
+Cela aide à maintenir une structure de projet plus organisée.</p>
+</div>
+<p>Une fois que vous avez répondu à toutes les questions, le projet Sphinx sera initialisé avec
+les fichiers et les dossiers nécessaires à la génération de la documentation.</p>
+<figure class="align-center" id="id2">
+<img alt="_images/9_squelette_dossier_docs.PNG" src="_images/9_squelette_dossier_docs.PNG" />
+<figcaption>
+<p><span class="caption-text">Squelette du dossier <em>docs</em> ainsi généré</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il sera possible de modifier les informations fournies lors de cette étape telles que le nom
+du projet, votre nom et la date réalisation en éditant le fichier <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="5_installation_sphinx.html" class="btn btn-neutral float-left" title="5. Installation de Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="7_modification_fichier_configuration.html" class="btn btn-neutral float-right" title="7. Modification du fichier de configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Amandine LEGIERSKI.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
